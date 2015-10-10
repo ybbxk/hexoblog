@@ -18,8 +18,8 @@ cond(no)->op
 # cc
 $$\sum_{i=1}^n a_i=0$$
 
-$$\sum^{j-1}_{k=0}{\widehat{\gamma}_{kj} z_k}$$
-$$f(x_1,x_x,\ldots,x_n) = x_1^2 + x_2^2 + \cdots + x_n^2 $$
+$$\sum^{j-1}\_{k=0}{\widehat{\gamma}\_{kj} z\_k}$$
+$$f(x\_1,x\_x,\ldots,x\_n) = x\_1^2 + x\_2^2 + \cdots + x\_n^2 $$
 
 # dd
 <table>
