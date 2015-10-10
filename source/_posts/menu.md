@@ -1,5 +1,6 @@
 title: menu
 date: 2015-09-16 10:26:00
+mathjax: true
 tags:
 ---
 # first leve
