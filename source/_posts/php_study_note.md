@@ -8,5 +8,5 @@ tags: [php,study,note]
 当使用完一个会话后，首先应该注解所有的变量，然后再调用：`session_destroy();`来清除会话ID  
   
 2、**eval()** 把字符串作为PHP代码执行  
-  
-3、
+ 
+3、`is_file()` 和 `file_exists()` 的区别：当参数是**目录**时，`file_exists()`返回 `true`，`is_file()` 返回`false`;
