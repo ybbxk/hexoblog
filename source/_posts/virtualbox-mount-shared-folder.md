@@ -7,4 +7,3 @@ tags: [virtualbox,mount]
 sudo mount -t vboxsf -o uid=1000,gid=1000 host_shared_folder /path/to/local/
 ```  
   
-
