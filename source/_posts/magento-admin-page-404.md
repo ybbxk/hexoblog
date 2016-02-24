@@ -1,5 +1,6 @@
 title: magento后台管理页面404错误
 date: 2015-12-29 15:05:00
+categories: magento
 tags: [magento,404]
 ---
 做magento开发，为了方便数据同步，直接把线上数据库导入本地，结果后台管理界面直接返回404。在[stackoverflow](http://stackoverflow.com/questions/5178066/error-404-not-found-in-magento-admin-login-page)找到了解决方法，执行如下sql语句，即可解决。  
