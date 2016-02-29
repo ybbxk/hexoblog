@@ -7,13 +7,13 @@ PHP模版文件打开后出现"Parse error: syntax error, unexpected end of file
 ```php
 {?>
 ```
-和这种代码
+>和这种代码
 ```php
 <?php}
 ```
-要使用空格分开，像这样
+>要使用空格分开，像这样
 ```php
 { ?>
 <?php {
 ```
-还要避免使用 ` <? ` 而应该使用 ` <?php ` 。  
+>还要避免使用 ` <? ` 而应该使用 ` <?php ` 。  
