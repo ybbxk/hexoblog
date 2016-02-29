@@ -1,5 +1,6 @@
 title: php parse error
 date: 2016-02-29 09:36:21
+categories: php
 tags: php
 ---
 PHP模版文件打开后出现"Parse error: syntax error, unexpected end of file in 'file path'",在[stackoverflow](http://stackoverflow.com/questions/11482527/parse-error-syntax-error-unexpected-end-of-file-in-my-php-code)找到了解决方法。  
