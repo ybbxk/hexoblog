@@ -74,3 +74,24 @@ deploy:
 since: 2013
 duoshuo_shortname: "hexog"
 duoshuo_share: true
+
+plugins:
+  - hexo-qiniu-sync
+
+qiniu:
+  offline: false
+  sync: true
+  bucket: cdn1456
+  access_key: cRBpXxs32Qzr_YSV133qHmB4RIdpvAA_zVphHPNj
+  secret_key: 0aEyyxeao47KNohTw22s9p9vgSBXq1lKEafjU_CM
+  dirPrefix: static
+  urlPrefix: https://dn-cdn1456.qbox.me/static
+  local_dir: static
+  update_exist: true
+  image: 
+    folder: images
+    extend: 
+  js:
+    folder: js
+  css:
+    folder: css
