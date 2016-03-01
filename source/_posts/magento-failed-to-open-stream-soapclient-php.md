@@ -1,6 +1,6 @@
 title: magento-failed-to-open-stream-soapclient.php
 date: 2016-01-25 18:29:18
-categories: magento
+categories: [magento,php]
 tags: [magento,soapclient]
 ---
 ```

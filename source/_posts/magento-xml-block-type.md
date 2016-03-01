@@ -1,6 +1,6 @@
 title: Magento的block type解释
 date: 2016-02-23 22:46:38
-categories: magento
+categories: [magento,php]
 tags: magento
 ---
 Magento在xml文件中block的type解释。结果也是在网上搜到的，按照 `type="A/B"`的格式来解释。  

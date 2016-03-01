@@ -1,5 +1,6 @@
 title: PHP学习笔记
 date: 2015-09-17 13:52:57
+categories: php
 tags: [php,study,note]
 ---
 1、销毁一个session变量使用`unset($_SESSION['myvar']_)`;

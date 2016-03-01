@@ -1,6 +1,6 @@
 title: magento直接使用sql语句
 date: 2016-02-24 17:32:25
-categories: magento
+categories: [magento,php]
 tags: [magento,sql]
 ---
 原文[DIRECT SQL QUERIES IN MAGENTO](http://fishpig.co.uk/magento/tutorials/direct-sql-queries/)有点长，直接转过来了。  
