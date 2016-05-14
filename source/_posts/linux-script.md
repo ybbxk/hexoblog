@@ -7,4 +7,4 @@ a) ` /bin/cp -rf /zzz/zzz/* /xxx/xxx `
 b) ` /bin/cp -rf /zzz/zzz/* /xxx/xxx `  
 原来当使用root登陆时，环境变量中会有一条 ` alias cp = cp -i ` ，用于防止管理员误操作。
 
-2.tt
+2.
