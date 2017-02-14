@@ -75,9 +75,13 @@ since: 2013
 duoshuo_shortname: "hexog"
 duoshuo_share: true
 
-plugins:
-  - hexo-qiniu-sync
+search: 
+  path: search.xml
+  field: all
 
+#plugins:
+#  - hexo-qiniu-sync
+#
 qiniu:
   offline: false
   sync: true
