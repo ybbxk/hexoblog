@@ -72,8 +72,8 @@ deploy:
   repo: git@github.com:ybbxk/ybbxk.github.io.git
 
 since: 2013
-duoshuo_shortname: "hexog"
-duoshuo_share: true
+#duoshuo_shortname: "hexog"
+#duoshuo_share: true
 
 search: 
   path: search.xml
@@ -99,3 +99,5 @@ qiniu:
     folder: js
   css:
     folder: css
+
+disqus_shortname: ybbxk
