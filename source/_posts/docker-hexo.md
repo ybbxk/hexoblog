@@ -16,11 +16,11 @@ npm install hexo-cli -g
 
 4.全自动部署，当然是需要docker-compose了。但是使用compose运行时，提示`nodejs exited with code 0`，而直接用Dockerfile却可以正常运行，参考这个[stackoverflow](https://stackoverflow.com/questions/37100358/docker-composer-exited-with-code-0)得到了解决方法。在docker-compose.yml文件增加一行`tty: true`，可以实现后台运行。  
 
-5.由于桌面端无法没装nodejs(本来就是不想装，才用的docker)，无法运行hexo命令。在虚拟机里运行的话，每次要敲一大堆的命令。但是桌面上装上的话，又背离了使用docker的初衷。所以，还是用脚本来解决吧。在git-bash命令行里增加一个函数，内容如下。
+5.由于桌面端没装nodejs(本来就是不想装，才用的docker)，无法运行hexo命令。在虚拟机里运行的话，每次要敲一大堆的命令。但是桌面上装上的话，又背离了使用docker的初衷。所以，还是用脚本来解决吧。在/usr/bin 下面增加一个文件，内容如下。
 ```
 #!/bin/bash
 all=$@
 docker exec -i hexo bash -c "cd /path/to/hexo;hexo $all"
 ```
-hexo使用的container 名字是 `hexo`, 通过一个`all`来传递所有参数，是因为直接在 -c后面用 `$@`时，多参数只能收到第一个参数，采用了个变通的方法。  
+hexo使用的container 名字是 `hexo`, 通过一个`all`来传递所有参数，是因为直接在 -c后面用 `$@`时，多参数只能收到第一个参数，采用了个变通的方法。使用时，直接在桌面运行 `hexo param`就可以了。  
 大功告成，用此docker完成本文。
