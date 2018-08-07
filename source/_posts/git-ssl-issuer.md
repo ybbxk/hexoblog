@@ -1,4 +1,4 @@
-title: git服务器使用自签证书出现SSL certificate problem: Unable to get local issuer certificate错误
+title: 'git服务器使用自签证书出现SSL certificate problem: Unable to get local issuer certificate错误'
 date: 2017-02-23 11:00:00
 tags:
 ---
