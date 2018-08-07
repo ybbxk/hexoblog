@@ -21,7 +21,7 @@ addons:
 
 before_install:
 # Decrypt the private key
-- openssl aes-256-cbc -K $encrypted_5a1f41e7e87a_key -iv $encrypted_5a1f41e7e87a_iv -in travis_rsa.enc -out travis_rsax -d
+- openssl aes-256-cbc -K $encrypted_5a1f41e7e87a_key -iv $encrypted_5a1f41e7e87a_iv -in .travis/id_rsa.enc -out id_rsa -d
 # Set the permission of the key
 - chmod 600 ~/.ssh/id_rsa
 # Start SSH agent
