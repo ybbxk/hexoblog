@@ -20,25 +20,23 @@ addons:
   # - git.coding.net
 
 before_install:
-# # Decrypt the private key
-# - openssl aes-256-cbc -K $encrypted_9f8cdcf38d01_key -iv $encrypted_9f8cdcf38d01_iv
-#   -in .travis/ssh_key.enc -out ~/.ssh/id_rsa -d
-# # Set the permission of the key
-# - chmod 600 ~/.ssh/id_rsa
-# # Start SSH agent
-# - eval $(ssh-agent)
-# # Add the private key to the system
-# - ssh-add ~/.ssh/id_rsa
-# # Copy SSH config
-# - cp .travis/ssh_config ~/.ssh/config
+# Decrypt the private key
+- openssl aes-256-cbc -K $encrypted_5a1f41e7e87a_key -iv $encrypted_5a1f41e7e87a_iv -in travis_rsa.enc -out travis_rsax -d
+# Set the permission of the key
+- chmod 600 ~/.ssh/id_rsa
+# Start SSH agent
+- eval $(ssh-agent)
+# Add the private key to the system
+- ssh-add ~/.ssh/id_rsa
+# Copy SSH config
+- cp .travis/ssh_config ~/.ssh/config
 
 
 install:
 - npm install
 
 before_script:
-- git submodule init
-- git submodule update --remote --merge
+- npm install hexo --save
 
 script:
 #- gulp build

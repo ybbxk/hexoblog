@@ -1,18 +1,19 @@
 # Hexo Configuration
-## Docs: http://hexo.io/docs/configuration.html
+## Docs: https://hexo.io/docs/configuration.html
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
 title: Thinking & Skills
-subtitle: ts
+subtitle: TS
 description:
+keywords:
 author: Qiang
 language: zh-Hans
 timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://hexo.guoqiang.info
+url: https://hexo.guoqiang.info
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -42,7 +43,16 @@ highlight:
   line_number: true
   auto_detect: true
   tab_replace:
-
+  
+# Home page setting
+# path: Root path for your blogs index page. (default = '')
+# per_page: Posts displayed per page. (0 = disable pagination)
+# order_by: Posts order. (Order by date descending by default)
+index_generator:
+  path: ''
+  per_page: 10
+  order_by: -date
+  
 # Category & Tag
 default_category: uncategorized
 category_map:
@@ -61,43 +71,17 @@ per_page: 10
 pagination_dir: page
 
 # Extensions
-## Plugins: http://hexo.io/plugins/
-## Themes: http://hexo.io/themes/
+## Plugins: https://hexo.io/plugins/
+## Themes: https://hexo.io/themes/
 theme: next
 
 # Deployment
-## Docs: http://hexo.io/docs/deployment.html
+## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type: git
-  repo: git@github.com:ybbxk/ybbxk.github.io.git
-
-since: 2013
-#duoshuo_shortname: "hexog"
-#duoshuo_share: true
+  type:
 
 search: 
   path: search.xml
   field: all
-
-#plugins:
-#  - hexo-qiniu-sync
-#
-qiniu:
-  offline: false
-  sync: true
-  bucket: cdn1456
-  access_key: cRBpXxs32Qzr_YSV133qHmB4RIdpvAA_zVphHPNj
-  secret_key: 0aEyyxeao47KNohTw22s9p9vgSBXq1lKEafjU_CM
-  dirPrefix: static
-  urlPrefix: https://dn-cdn1456.qbox.me/static
-  local_dir: static
-  update_exist: true
-  image: 
-    folder: images
-    extend: 
-  js:
-    folder: js
-  css:
-    folder: css
 
 disqus_shortname: ybbxk
