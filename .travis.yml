@@ -40,8 +40,9 @@ before_script:
 
 script:
 #- gulp build
-- npm install -g hexo-cli
+- npm install -g hexo-cli gulp
 - hexo generate
+- gulp
 
 #after_script:
 after_success:
