@@ -21,7 +21,8 @@ gulp.task('minify-html', function() {
 gulp.task('clean-css', function() {
     return gulp.src('./public/**/*.css')
         .pipe(minifycss({
-            compatibility: 'ie8'
+            compatibility: 'ie8',
+			rebase: false
         }))
         .pipe(gulp.dest('./public'));
 });
