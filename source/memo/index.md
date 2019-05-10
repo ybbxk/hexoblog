@@ -2,7 +2,7 @@ title: 便签
 date: 2015-09-16 14:05:10
 ---
 1.增加数据库用户权限  
-```grant all privileges on dbname.* to username@'%' identified by 'password';```  
+`grant all privileges on dbname.* to username@'%' identified by 'password';`  
 2.清除 DNS 缓存:  
 chrome://net-internals/#dns  
 3.[PHP程序员进阶学习书籍参考指南](http://blog.csdn.net/heiyeshuwu/article/details/50686878)  
@@ -10,4 +10,8 @@ chrome://net-internals/#dns
 ```bash
 git log --pretty=%at --name-status --reverse | perl -ane '($x,$f)=@F;next if !$x;$t=$x,next if !defined($f)||$s{$f};$s{$f}=utime($t,$t,$f),next if $x=~/[AM]/;'
 ```
-
+5.php xdebug cli  
+```bash
+export PHP_IDE_CONFIG="serverName=serverName" && export XDEBUG_CONFIG="remote_enable=1 remote_mode=req remote_port=9000 remote_host=ip remote_connect_back=0"
+```
+`serverName`是IDE中配置的server name
