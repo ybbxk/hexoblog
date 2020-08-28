@@ -24,3 +24,7 @@ export PHP_IDE_CONFIG="serverName=serverName" && export XDEBUG_CONFIG="remote_en
 ```bash
 docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' container_name_or_id
 ```
+7.xargs 处理filename带空格的文件
+```bash
+find . -name \*.mp3 -print0 | xargs -0 mplayer
+```
