@@ -1,7 +1,7 @@
 language: node_js
 
 node_js:
-- '14'
+- '15'
 
 cache:
   apt: true
@@ -38,12 +38,12 @@ install:
 before_script:
 - git log --pretty=%at --name-status --reverse | perl -ane '($x,$f)=@F;next if !$x;$t=$x,next if !defined($f)||$s{$f};$s{$f}=utime($t,$t,$f),next if $x=~/[AM]/;'
 - npm install hexo --save
+- git clone https://github.com/theme-next/theme-next-pjax themes/next/source/lib/pjax
 
 script:
 #- gulp build
-- npm install -g hexo-cli gulp
+- npm install -g hexo-cli
 - hexo generate
-- gulp
 
 #after_script:
 after_success:
