@@ -28,3 +28,7 @@ docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' con
 ```bash
 find . -name \*.mp3 -print0 | xargs -0 mplayer
 ```
+8.xdebug 连不上时，可以试试把 remote_host 改为
+```bash
+xdebug.remote_host=host.docker.internal
+```
