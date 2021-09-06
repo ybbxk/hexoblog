@@ -32,3 +32,7 @@ find . -name \*.mp3 -print0 | xargs -0 mplayer
 ```bash
 xdebug.remote_host=host.docker.internal
 ```
+9.Linux 查看上次开机时间
+```
+date -d "$(awk -F. '{print $1}' /proc/uptime) second ago" +"%Y-%m-%d %H:%M:%S"
+```
