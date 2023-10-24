@@ -1,13 +1,20 @@
-stages:
-  - build
-  - test
+image: node:10.15.3
 
-job_build:
-  stage: build
-  script:
-    - echo "Building the project"
+cache:
+  paths:
+    - node_modules/
 
-job_test:
-  stage: test
+before_script:
+  - npm install hexo-cli -g
+  - test -e package.json && npm install
+  - hexo generate
+
+pages:
   script:
-    - echo "Running tests"
+    - hexo generate
+  artifacts:
+    paths:
+      - public
+  rules:
+    - if: $CI_COMMIT_REF_NAME == $CI_DEFAULT_BRANCH
+
